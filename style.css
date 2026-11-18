@@ -1,0 +1,398 @@
+/* ===== Màu sắc và nền tảng ===== */
+:root {
+  --ink: #221e1b;
+  --paper: #ffffff;
+  --bg: #f5f7f4;
+  --green: #1e4d3a;
+  --amber: #e0a526;
+  --line: #dde2da;
+  --muted: #5d6660;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 5vw 56px;
+}
+
+h2 {
+  margin: 40px 0 16px;
+  color: var(--green);
+}
+
+.lead {
+  max-width: 60ch;
+}
+
+/* ===== Thanh điều hướng ===== */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 5vw;
+  background: var(--green);
+}
+
+.logo {
+  color: var(--amber);
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-bottom: 3px;
+}
+
+nav a.on,
+nav a:hover {
+  border-bottom: 2px solid var(--amber);
+}
+
+/* ===== Banner đầu trang ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--green);
+}
+
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--green);
+}
+
+/* ===== Nút bấm ===== */
+.btn,
+.ghost,
+.buy,
+.filter {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn {
+  background: var(--amber);
+  color: var(--ink);
+  border: 0;
+  padding: 10px 22px;
+  font-weight: 700;
+}
+
+.ghost {
+  background: none;
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 10px 22px;
+  margin-left: 8px;
+}
+
+.buy {
+  background: var(--green);
+  color: #fff;
+  border: 0;
+  padding: 8px 14px;
+}
+
+.buy:hover,
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* ===== Bộ lọc món ===== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.filter {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 6px 16px;
+}
+
+.filter.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+/* ===== Thẻ sản phẩm ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card[hidden] {
+  display: none;
+}
+
+.ph {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: var(--green);
+  color: var(--amber);
+}
+
+.body {
+  padding: 14px 16px 16px;
+}
+
+.body h3 {
+  margin: 0;
+}
+
+.body p {
+  margin: 4px 0 12px;
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== Điểm nổi bật, hành trình, kêu gọi ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.feature {
+  border-left: 3px solid var(--amber);
+  padding-left: 14px;
+}
+
+.feature h3 {
+  margin: 0 0 4px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline b {
+  color: var(--green);
+  min-width: 56px;
+}
+
+.cta {
+  margin-top: 48px;
+  padding: 32px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  color: var(--amber);
+  margin-top: 0;
+}
+
+/* ===== Biểu mẫu, giờ mở cửa, giỏ hàng ===== */
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.hours {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hours td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  max-width: 480px;
+}
+
+.form label {
+  display: grid;
+  gap: 4px;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.pay {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.pay label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  cursor: pointer;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.sum.big {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ===== Chân trang và thông báo ===== */
+footer {
+  background: var(--ink);
+  color: #d8d4cf;
+  padding: 32px 5vw 16px;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+footer h4 {
+  margin: 0 0 8px;
+  color: var(--amber);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: block;
+  color: #d8d4cf;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: transform 0.25s;
+}
+
+#toast.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ===== Truy cập và màn hình nhỏ ===== */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #toast {
+    transition: none;
+  }
+}

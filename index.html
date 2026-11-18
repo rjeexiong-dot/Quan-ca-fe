@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Góc Rang Coffee - cà phê rang mới, pha tươi từng ly.">
+  <title>Trang chủ | Góc Rang Coffee</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="index.html">Góc Rang Coffee</a>
+    <nav>
+      <a href="index.html" class="on">Trang chủ</a>
+      <a href="menu.html">Thực đơn</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="lienhe.html">Liên hệ</a>
+      <a href="giohang.html">Giỏ hàng (<span id="count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Cà phê rang mới,<br>pha ngay khi bạn gọi</h1>
+        <p>Hạt rang mỗi tuần, pha tươi từng ly.</p>
+        <a class="btn" href="menu.html">Xem thực đơn và đặt mua</a>
+      </div>
+      <img class="hero-img" src="images/hat rang.jpg" alt="Quầy pha cà phê Góc Rang">
+    </section>
+    <h2>Món nên thử</h2>
+    <div class="grid">
+      <article class="card">
+        <img class="ph" src="images/americano.jpg" alt="Americano nóng">
+        <div class="body">
+          <h3>Americano nóng</h3>
+          <p>Double shot espresso, đậm và sạch vị.</p>
+          <div class="row">
+            <b>35.000đ</b>
+            <button class="buy" data-id="americano" data-name="Americano nóng" data-price="35000">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img class="ph" src="images/latte.jpg" alt="Latte">
+        <div class="body">
+          <h3>Latte</h3>
+          <p>Sữa tươi đánh mịn, espresso cân bằng.</p>
+          <div class="row">
+            <b>45.000đ</b>
+            <button class="buy" data-id="latte" data-name="Latte" data-price="45000">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img class="ph" src="images/cappuccino.jpg" alt="Cappuccino">
+        <div class="body">
+          <h3>Cappuccino</h3>
+          <p>Lớp bọt sữa dày, rắc ca cao mỏng.</p>
+          <div class="row">
+            <b>45.000đ</b>
+            <button class="buy" data-id="cappuccino" data-name="Cappuccino" data-price="45000">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <h2>Vì sao chọn chúng tôi</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Rang tại quán</h3>
+        <p>Hạt được rang mỗi tuần với số lượng nhỏ để luôn tươi.</p>
+      </div>
+      <div class="feature">
+        <h3>Pha theo đơn</h3>
+        <p>Mỗi ly được pha ngay khi bạn gọi, không pha sẵn.</p>
+      </div>
+      <div class="feature">
+        <h3>Giao tận nơi</h3>
+        <p>Miễn phí giao hàng cho đơn từ 150.000đ.</p>
+      </div>
+    </div>
+    <section class="cta">
+      <h2>Thèm cà phê rồi phải không?</h2>
+      <p>Chọn món, thêm vào giỏ và đặt hàng chỉ trong một phút.</p>
+      <a class="btn" href="menu.html">Đặt ngay</a>
+    </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <div>
+        <h4>Góc Rang Coffee</h4>
+        <p>Thanh Phố Vinh</p>
+        <p>Mở cửa 08:00–22:00 mỗi ngày</p>
+      </div>
+      <div>
+        <h4>Liên kết</h4>
+        <a href="menu.html">Thực đơn</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+        <a href="giohang.html">Giỏ hàng</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Góc Rang Coffee</p>
+  </footer>
+
+  <div id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
